@@ -52,7 +52,10 @@ namespace LojaVirtual.UI.Web.Helpers
 
             };
 
-            claims.AddRange(usuario.Permissoes.Select(permissao => new Claim(ClaimTypes.Role, permissao)));
+            string[] permissaoArray = usuario.Permissoes.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+
+
+            claims.AddRange(permissaoArray.Select(permissao => new Claim(ClaimTypes.Role, permissao)));
 
             var identity = new ClaimsIdentity(claims, authenticationType);
             return identity;
@@ -91,7 +94,7 @@ namespace LojaVirtual.UI.Web.Helpers
                 }
             }
 
-            usuario.Permissoes = permissoes.ToArray();
+            usuario.Permissoes = permissoes.ToArray().ToString();
 
             return usuario;
         }

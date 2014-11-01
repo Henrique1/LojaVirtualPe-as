@@ -163,6 +163,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Painel\Controllers\UsuarioController.cs" />
+    <Compile Include="Areas\Painel\PainelAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -185,6 +187,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Areas\Painel\Views\web.config" />
+    <Content Include="Areas\Painel\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Painel\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Painel\Views\Usuario\Index.cshtml" />
+    <Content Include="Areas\Painel\Views\Usuario\Cadastrar.cshtml" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -219,6 +226,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Painel\Models\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
