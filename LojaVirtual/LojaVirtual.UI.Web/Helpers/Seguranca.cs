@@ -91,7 +91,7 @@ namespace LojaVirtual.UI.Web.Helpers
                 }
             }
 
-            usuario.Permissoes = permissoes;
+            usuario.Permissoes = permissoes.ToArray();
 
             return usuario;
         }

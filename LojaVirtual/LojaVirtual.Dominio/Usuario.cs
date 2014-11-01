@@ -16,6 +16,6 @@ namespace LojaVirtual.Dominio
 
         public string Senha { get; set; }
 
-        public List<String> Permissoes { get; set; }
+        public String[] Permissoes { get; set; }
     }
 }

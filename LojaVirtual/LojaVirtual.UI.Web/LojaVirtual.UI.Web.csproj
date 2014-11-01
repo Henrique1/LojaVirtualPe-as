@@ -225,6 +225,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LojaVirtual.Aplicacao\LojaVirtual.Aplicacao.csproj">
+      <Project>{80509a22-6a45-40cd-bfdf-71f0ad35b375}</Project>
+      <Name>LojaVirtual.Aplicacao</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LojaVirtual.Dominio\LojaVirtual.Dominio.csproj">
       <Project>{5b66fb49-f01c-4c26-bd31-09382a041dc6}</Project>
       <Name>LojaVirtual.Dominio</Name>
