@@ -163,6 +163,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Cliente\ClienteAreaRegistration.cs" />
+    <Compile Include="Areas\Cliente\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Painel\Controllers\HomeController.cs" />
     <Compile Include="Areas\Painel\Controllers\UsuarioController.cs" />
     <Compile Include="Areas\Painel\PainelAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -192,6 +195,11 @@
     <Content Include="Areas\Painel\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Painel\Views\Usuario\Index.cshtml" />
     <Content Include="Areas\Painel\Views\Usuario\Cadastrar.cshtml" />
+    <Content Include="Areas\Cliente\Views\web.config" />
+    <Content Include="Areas\Cliente\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Cliente\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Cliente\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Painel\Views\Home\Index.cshtml" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -226,6 +234,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Cliente\Models\" />
     <Folder Include="Areas\Painel\Models\" />
     <Folder Include="Models\" />
   </ItemGroup>

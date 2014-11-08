@@ -17,7 +17,8 @@ namespace LojaVirtual.UI.Web.Areas.Painel
             context.MapRoute(
                 "Painel_default",
                 "Painel/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                namespaces: new[] { "LojaVirtual.UI.Web.Areas.Painel.Controllers" }
             );
         }
     }
